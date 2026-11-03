@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MACK LAB 2027 | FPS Performance Studio</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #080d16;
+      color: #f4f8ff;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 7%;
+      border-bottom: 1px solid #1c2b3d;
+    }
+    .logo { font-size: 23px; font-weight: 900; }
+    .logo span { color: #00d9ff; }
+    nav a {
+      color: #b9c7d8;
+      text-decoration: none;
+      margin-left: 24px;
+    }
+    .hero {
+      padding: 110px 7%;
+      text-align: center;
+      background: radial-gradient(
+        ellipse at top, #102d43, #080d16 65%
+      );
+    }
+    .tag {
+      color: #00d9ff;
+      letter-spacing: 3px;
+      font-size: 13px;
+    }
+    h1 {
+      font-size: clamp(42px, 7vw, 84px);
+      margin: 20px 0;
+      letter-spacing: -3px;
+    }
+    h1 span { color: #00d9ff; }
+    p {
+      color: #a9b9cc;
+      line-height: 1.8;
+    }
+    .hero p {
+      max-width: 650px;
+      margin: 0 auto 35px;
+      font-size: 18px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 17px 30px;
+      background: #00d9ff;
+      color: #06111c;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+    .secondary {
+      background: transparent;
+      color: white;
+      border: 1px solid #38516a;
+      margin-left: 10px;
+    }
+    section { padding: 75px 7%; }
+    h2 { font-size: 35px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .card {
+      background: #101a27;
+      border: 1px solid #23354a;
+      padding: 30px;
+      border-radius: 12px;
+    }
+    .card strong { color: #00d9ff; }
+    .notice {
+      text-align: center;
+      background: #101a27;
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #7f91a5;
+      border-top: 1px solid #1c2b3d;
+    }
+    @media(max-width: 700px) {
+      .grid { grid-template-columns: 1fr; }
+      nav { display: none; }
+      .secondary { margin: 12px 0 0; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">⚡ MACK<span>.LAB</span></div>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#download">Download</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div class="tag">WINDOWS PERFORMANCE SOFTWARE</div>
+      <h1>YOUR PC.<br><span>YOUR PERFORMANCE.</span></h1>
+      <p>
+        MACK LAB 2027 is a Windows gaming utility
+        designed to help you manage gaming-related
+        system settings, with backup and restore controls.
+      </p>
+      <a class="btn" href="#download">EXPLORE MACK LAB</a>
+      <a class="btn secondary" href="#features">VIEW FEATURES</a>
+    </div>
+
+    <section id="features">
+      <div class="tag">PERFORMANCE CONTROL</div>
+      <h2>Built for PC gamers.</h2>
+      <div class="grid">
+        <div class="card">
+          <strong>01 / OPTIMIZE</strong>
+          <h3>Gaming settings</h3>
+          <p>Manage selected Windows gaming settings.</p>
+        </div>
+        <div class="card">
+          <strong>02 / MONITOR</strong>
+          <h3>System overview</h3>
+          <p>View CPU, RAM and system information.</p>
+        </div>
+        <div class="card">
+          <strong>03 / RESTORE</strong>
+          <h3>Restore controls</h3>
+          <p>Back up and restore supported changes.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="notice" id="download">
+      <div class="tag">MACK LAB 2027</div>
+      <h2>Public beta coming soon.</h2>
+      <p>
+        The Windows installer is being tested.
+        Performance improvements are not guaranteed.
+      </p>
+      <a class="btn" href="https://github.com/marcusjustberg-dot/macklab2027/releases">
+        VIEW RELEASES
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    © 2027 MACK LAB. All rights reserved.
+  </footer>
+</body>
+</html>
